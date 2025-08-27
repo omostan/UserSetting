@@ -1,0 +1,334 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="clr-namespace:UserSetting.Controls.CustomUI"
+    xmlns:fa="http://schemas.fontawesome.com/icons/fonts"
+    xmlns:ut="clr-namespace:UserSetting.Controls.Proxies">
+
+    <!--#region ///////////// START Custom Window - minimizeButton, maximizeButton and closeButton Controls /////////////////-->
+
+    <!--#region  StanButtonStyle-->
+    <Style x:Key="StanButtonStyle" TargetType="{x:Type TypeName=Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontFamily" Value="Webdings" />
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  minimizeButton-->
+    <Style
+        x:Key="MinimizedButtonStyle"
+        BasedOn="{StaticResource ResourceKey=StanButtonStyle}"
+        TargetType="{x:Type TypeName=Button}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=DefaultBackgroundColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=MinimizeButtonForegroundColor}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TypeName=Button}">
+                    <Border Background="{TemplateBinding Property=Background}">
+                        <ContentPresenter>
+                            <ContentPresenter.Content>
+                                <TextBlock
+                                    Padding="0,0,0,10"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding Path=Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                            </ContentPresenter.Content>
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ResourceKey=MinimizeButtonMouseOverBackgroundColor}" />
+                <Setter Property="Foreground" Value="{DynamicResource ResourceKey=MouseOverForegroundColor}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  maximizeButton-->
+    <Style
+        x:Key="MaximizedButtonStyle"
+        BasedOn="{StaticResource ResourceKey=StanButtonStyle}"
+        TargetType="{x:Type TypeName=Button}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=DefaultBackgroundColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=MaximizeButtonForegroundColor}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TypeName=Button}">
+                    <Border Background="{TemplateBinding Property=Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ResourceKey=MaximizeButtonMouseOverBackgroundColor}" />
+                <Setter Property="Foreground" Value="{DynamicResource ResourceKey=MouseOverForegroundColor}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  closeButton-->
+    <Style
+        x:Key="CloseButtonStyle"
+        BasedOn="{StaticResource ResourceKey=StanButtonStyle}"
+        TargetType="{x:Type TypeName=Button}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=DefaultBackgroundColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=RedColor}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TypeName=Button}">
+                    <Border Background="{TemplateBinding Property=Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ResourceKey=RedColor}" />
+                <Setter Property="Foreground" Value="{DynamicResource ResourceKey=MouseOverForegroundColor}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  ThemeToggleButtonStyle-->
+    <Style x:Key="ThemeToggleButtonStyle" TargetType="{x:Type TypeName=Button}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=ThemeToggleButtonBackgroundColor}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TypeName=Button}">
+                    <Border Background="{TemplateBinding Property=Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ResourceKey=ThemeToggleButtonMouseOverBackgroundColor}" />
+                <Setter Property="Foreground" Value="{DynamicResource ResourceKey=DefaultBackgroundColor}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  CustomWindow-->
+    <Style TargetType="{x:Type TypeName=cw:CustomWindow}">
+        <Setter Property="WindowStyle" Value="None" />
+        <Setter Property="ResizeMode" Value="CanResize" />
+        <Setter Property="Width" Value="1920" />
+        <Setter Property="Height" Value="1080" />
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=CustomWindowBackground}" />
+        <Setter Property="AllowsTransparency" Value="False" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ResourceKey=CustomWindowBorderBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TypeName=cw:CustomWindow}">
+                    <Border BorderBrush="{TemplateBinding Property=BorderBrush}" BorderThickness="{TemplateBinding Property=BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <DockPanel Grid.Column="0" DockPanel.Dock="Left">
+                                    <ContentControl
+                                        FontSize="20"
+                                        FontWeight="Bold"
+                                        Foreground="{DynamicResource ResourceKey=HeaderForegroundColor}">
+                                        <Grid x:Name="CustomTitleBar">
+                                            <Border>
+                                                <Border.Background>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Offset="-1" Color="{DynamicResource ResourceKey=HeadBackgroundBrush1}" />
+                                                        <GradientStop Offset="1" Color="{DynamicResource ResourceKey=HeadBackgroundBrush2}" />
+                                                    </LinearGradientBrush>
+                                                </Border.Background>
+                                            </Border>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Image HorizontalAlignment="Left" Source="pack://application:,,,/;component/Icons/swim_411x153_transparent.ico" />
+                                                <TextBlock
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    WindowChrome.IsHitTestVisibleInChrome="True">
+                                                    <Run Text="{Binding Path=Subtitle, FallbackValue=Subtitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TypeName=cw:CustomWindow}}}" />
+                                                    <TextBlock.Style>
+                                                        <Style TargetType="TextBlock">
+                                                            <Setter Property="Background" Value="Transparent" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Path=IsTestEnvironment, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TypeName=cw:CustomWindow}}}" Value="True">
+                                                                    <Setter Property="Margin" Value="10,0,0,0" />
+                                                                    <Setter Property="Padding" Value="5,0,5,0" />
+                                                                    <Setter Property="Foreground" Value="{DynamicResource ResourceKey=RedColor}" />
+                                                                    <Setter Property="Background" Value="{DynamicResource ResourceKey=YellowColor}" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </TextBlock.Style>
+                                                </TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </ContentControl>
+                                </DockPanel>
+                                <DockPanel Grid.Column="1" DockPanel.Dock="Right">
+                                    <ContentControl>
+                                        <Grid x:Name="GridContextMenu">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="{Binding ElementName=CustomTitleBar, Path=ActualHeight}" />
+                                            </Grid.ColumnDefinitions>
+                                            <Button
+                                                x:Name="ThemeButton"
+                                                cw:ContextMenuClickBehavior.IsLeftClickEnabled="True"
+                                                Style="{StaticResource ResourceKey=ThemeToggleButtonStyle}"
+                                                ToolTip="{DynamicResource ResourceKey=KeyTheme}">
+                                                <Button.Content>
+                                                    <fa:ImageAwesome
+                                                        Width="28"
+                                                        Height="28"
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        Icon="Solid_Bars"
+                                                        PrimaryColor="{DynamicResource ResourceKey=DefaultBackgroundColor}" />
+                                                </Button.Content>
+                                                <Button.ContextMenu>
+                                                    <ContextMenu
+                                                        x:Name="ThemeContextMenu"
+                                                        DataContext="{Binding Path=PlacementTarget.DataContext, RelativeSource={RelativeSource Mode=Self}}"
+                                                        ItemsSource="{Binding Path=MenuItems}"
+                                                        SnapsToDevicePixels="True">
+                                                        <ContextMenu.Resources>
+                                                            <ut:BindingProxy x:Key="Proxy" Data="{Binding}" />
+                                                        </ContextMenu.Resources>
+                                                        <ContextMenu.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <MenuItem
+                                                                    x:Name="ThemeButtonItem"
+                                                                    Margin="-35,0,-80,0"
+                                                                    Command="{Binding Path=Data.ThemeChangeCommand, Source={StaticResource ResourceKey=Proxy}}"
+                                                                    CommandParameter="{Binding Path=Header}"
+                                                                    Cursor="Hand"
+                                                                    Header="{Binding Path=Header}">
+                                                                    <MenuItem.Icon>
+                                                                        <Rectangle
+                                                                            Width="16"
+                                                                            Height="16"
+                                                                            Fill="{Binding Path=Color}" />
+                                                                    </MenuItem.Icon>
+                                                                </MenuItem>
+                                                            </DataTemplate>
+                                                        </ContextMenu.ItemTemplate>
+                                                    </ContextMenu>
+                                                </Button.ContextMenu>
+                                            </Button>
+                                        </Grid>
+                                    </ContentControl>
+                                </DockPanel>
+                                <DockPanel Grid.Column="2" DockPanel.Dock="Right">
+                                    <ContentControl>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="{Binding ElementName=CustomTitleBar, Path=ActualHeight}" />
+                                                <ColumnDefinition Width="{Binding ElementName=CustomTitleBar, Path=ActualHeight}" />
+                                                <ColumnDefinition Width="{Binding ElementName=CustomTitleBar, Path=ActualHeight}" />
+                                            </Grid.ColumnDefinitions>
+                                            <Button
+                                                x:Name="MinimizeButton"
+                                                Grid.Column="0"
+                                                Content="0"
+                                                Style="{StaticResource ResourceKey=MinimizedButtonStyle}"
+                                                ToolTip="{DynamicResource ResourceKey=KeyMinimize}" />
+                                            <Button
+                                                x:Name="MaximumButton"
+                                                Grid.Column="1"
+                                                Content="{Binding Path=MaximumButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TypeName=cw:CustomWindow}}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                Style="{StaticResource ResourceKey=MaximizedButtonStyle}"
+                                                ToolTip="{DynamicResource ResourceKey=KeyMaximize}" />
+                                            <Button
+                                                x:Name="CloseButton"
+                                                Grid.Column="2"
+                                                Content="r"
+                                                Style="{StaticResource ResourceKey=CloseButtonStyle}"
+                                                ToolTip="{DynamicResource ResourceKey=KeyClose}" />
+                                        </Grid>
+                                    </ContentControl>
+                                </DockPanel>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0" Background="{TemplateBinding Property=Background}">
+                                    <AdornerDecorator>
+                                        <ContentPresenter />
+                                    </AdornerDecorator>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <ContentControl FontSize="10" Foreground="{DynamicResource ResourceKey=FooterForegroundColor}">
+                                        <Grid
+                                            x:Name="authorCredits"
+                                            Height="20"
+                                            HorizontalAlignment="Stretch"
+                                            VerticalAlignment="Stretch">
+                                            <Border>
+                                                <Border.Background>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Offset="-1" Color="{DynamicResource ResourceKey=FootBackgroundBrush1}" />
+                                                        <GradientStop Offset="1" Color="{DynamicResource ResourceKey=FootBackgroundBrush2}" />
+                                                    </LinearGradientBrush>
+                                                </Border.Background>
+                                            </Border>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <!--  Row 0 Copyright and app version  -->
+                                                <ContentPresenter
+                                                    Grid.Column="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Content="{Binding Path=AuthorCredits, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TypeName=cw:CustomWindow}}}" />
+
+                                                <!--  Row 1 Resize grip  -->
+                                                <ResizeGrip
+                                                    Grid.Column="1"
+                                                    Width="10"
+                                                    Height="10"
+                                                    VerticalAlignment="Bottom" />
+                                            </Grid>
+                                        </Grid>
+                                    </ContentControl>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
+    <!--#endregion ///////////// END Custom Window - minimizeButton, maximizeButton and closeButton Controls /////////////////-->
+</ResourceDictionary>

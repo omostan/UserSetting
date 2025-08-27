@@ -1,0 +1,218 @@
+﻿<ResourceDictionary
+    x:Class="UserSetting.WPF.Resources.Languages.de_DE"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <!--  ThemeToggleButton Content  -->
+    <s:String x:Key="KeyBlue">Blau</s:String>
+    <s:String x:Key="KeyGreen">Grün</s:String>
+
+    <!--  ShellView  -->
+    <s:String x:Key="KeySelectLanguage">Sprachauswahl</s:String>
+    <s:String x:Key="KeyPleaseWait">Bitte Warten...</s:String>
+    <s:String x:Key="KeyOrder">Auftrag</s:String>
+    <s:String x:Key="KeyOrderDetails">Auftragdetails</s:String>
+    <s:String x:Key="KeyPosition">Position</s:String>
+    <s:String x:Key="KeySaveLayout">Speichern</s:String>
+    <s:String x:Key="KeyLoadLayout">Laden</s:String>
+    <s:String x:Key="KeyResetLayout">Zurücksetzen</s:String>
+    <s:String x:Key="KeyViews">Ansichten</s:String>
+    <s:String x:Key="KeyLayout">Layout</s:String>
+    <s:String x:Key="KeyColumns">Spalten</s:String>
+    <s:String x:Key="KeyDumpToConsole">Dump zur Konsole</s:String>
+    <s:String x:Key="ShowFixColumns">Spalten fixieren:</s:String>
+    <s:String x:Key="KeyResetColumnOrder">Spaltenreihenfolge wiederherstellen</s:String>
+    <!--  ShellView - Menu  -->
+    <s:String x:Key="KeyShowAll">Alle anzeigen</s:String>
+    <s:String x:Key="KeyShowCreationDate">Erstellt am</s:String>
+    <s:String x:Key="KeyShowOrderNumber">OrderNr</s:String>
+    <s:String x:Key="KeyShowCustomer">Kunde</s:String>
+    <s:String x:Key="KeyShowCreator">Erstellt von</s:String>
+    <s:String x:Key="KeyShowCapLocation">Kapazitätsstelle</s:String>
+    <s:String x:Key="KeyShowCountry">Land</s:String>
+    <s:String x:Key="KeyShowLocation">Aufstellort</s:String>
+    <s:String x:Key="KeyShowReceiptInfo">Beleg Info</s:String>
+    <s:String x:Key="KeyShowPositionNumber">PosNr</s:String>
+    <s:String x:Key="KeyShowSubPosNr">SubPosNr</s:String>
+    <s:String x:Key="KeyShowDesiredDate">Wünschtermin</s:String>
+    <s:String x:Key="KeyShowCapLocationPos">Kapazitätsstelle Pos</s:String>
+    <s:String x:Key="KeyShowAmount">Anzahl</s:String>
+    <s:String x:Key="KeyShowOpaMops">MOPS</s:String>
+    <s:String x:Key="KeyShowOpaSalt">SALT</s:String>
+    <s:String x:Key="KeyShowOpaReno">RENO</s:String>
+    <s:String x:Key="KeyShowOpaEmc">EMC</s:String>
+    <s:String x:Key="KeyShowOpaDecision">Entscheidung</s:String>
+    <s:String x:Key="KeyShowOpaComment">OPA Kommentar</s:String>
+    <s:String x:Key="KeyShowSalesComment">Sales Kommentar</s:String>
+    <s:String x:Key="KeyShowCustomerComment">Kunde Kommentar</s:String>
+    <s:String x:Key="KeyShowOpaReminder">OPA Erinnerung</s:String>
+    <s:String x:Key="KeyShowSapStatus">SAPStatus</s:String>
+    <s:String x:Key="KeyShowSdStatus">SWDStatus</s:String>
+    <s:String x:Key="KeyShowKPanelDeviceSoftware">KPanelSW</s:String>
+    <s:String x:Key="KeyShowSapMvd">SAPMVD</s:String>
+    <s:String x:Key="KeyShowRejectionReason">Ablehnungsgrund</s:String>
+    <s:String x:Key="KeyShowMarket">Markt</s:String>
+    <s:String x:Key="KeyShowCabinet">Gehäuse</s:String>
+    <s:String x:Key="KeyShowShellType">GehäuseTyp</s:String>
+    <s:String x:Key="KeyShowBoard">Platine</s:String>
+    <s:String x:Key="KeyShowGame">Spiel</s:String>
+    <s:String x:Key="KeyShowGameMix">Spielmix</s:String>
+    <s:String x:Key="KeyShowDisplayName">DisplayName</s:String>
+
+    <!--  OrderListingView  -->
+    <s:String x:Key="KeyOrders">Aufträge</s:String>
+    <s:String x:Key="KeyCopy">Kopieren</s:String>
+    <s:String x:Key="KeyFrom">Von:</s:String>
+    <s:String x:Key="KeyTo">Bis:</s:String>
+    <s:String x:Key="KeyFilter">Filter</s:String>
+    <s:String x:Key="KeySearchPlaceholder">Suche...</s:String>
+    <s:String x:Key="KeyCreationDate">Erstellt am</s:String>
+    <s:String x:Key="KeyOrderNr">AuftragsNr</s:String>
+    <s:String x:Key="KeyCustomer">Kunde</s:String>
+    <s:String x:Key="KeyCreator">Erstellt von</s:String>
+    <s:String x:Key="KeyCapLocation">Kapazitätsstelle</s:String>
+    <s:String x:Key="KeyCountry">Land</s:String>
+    <s:String x:Key="KeyLocation">Aufstellort</s:String>
+    <s:String x:Key="KeyReceiptInfo">Beleg Info</s:String>
+    <s:String x:Key="KeyPositionNr">PosNr</s:String>
+    <s:String x:Key="KeySubPosNr">SubPosNr</s:String>
+    <s:String x:Key="KeyDesiredDate">Wünschtermin</s:String>
+    <s:String x:Key="KeyCapLocationPos">Kapazitätsstelle Pos</s:String>
+    <s:String x:Key="KeyAmount">Anzahl</s:String>
+    <s:String x:Key="KeyOpaMops">MOPS OPA</s:String>
+    <s:String x:Key="KeyOpaSalt">SALT OPA</s:String>
+    <s:String x:Key="KeyOpaReno">RENO OPA</s:String>
+    <s:String x:Key="KeyOpaEmc">EMC OPA</s:String>
+    <s:String x:Key="KeyOpaDecision">OPA Entscheidung</s:String>
+    <s:String x:Key="KeyOpaComment">OPA Kommentar</s:String>
+    <s:String x:Key="KeySalesComment">Sales Kommentar</s:String>
+    <s:String x:Key="KeyCustomerComment">Kunde Kommentar</s:String>
+    <s:String x:Key="KeyOpaReminder">OPA Erinnerung</s:String>
+    <s:String x:Key="KeySapStatus">SAPStatus</s:String>
+    <s:String x:Key="KeySoftwareDeviceStatus">SWDStatus</s:String>
+    <s:String x:Key="KeyKPanelDeviceSoftware">KPanelSW</s:String>
+    <s:String x:Key="KeySapMaterialAvailabilityDate">SAPMVD</s:String>
+    <s:String x:Key="KeyRejectionReason">Abl. Grund</s:String>
+    <s:String x:Key="KeyMarket">Markt</s:String>
+    <s:String x:Key="KeyCabinet">Gehäuse</s:String>
+    <s:String x:Key="KeyShellType">GehäuseTyp</s:String>
+    <s:String x:Key="KeyBoard">Board</s:String>
+    <s:String x:Key="KeyGame">Spiel</s:String>
+    <s:String x:Key="KeyGameMix">SpielMix</s:String>
+    <s:String x:Key="KeyDisplayName">DisplayName</s:String>
+    <s:String x:Key="KeyPosId">PosID</s:String>
+    <s:String x:Key="KeyClear">Löschen</s:String>
+    <s:String x:Key="KeyReloadOrderData">Auftragsdaten erneut laden</s:String>
+    <s:String x:Key="KeyMessagesFor">Mitteilungen für</s:String>
+    <s:String x:Key="KeyOrderMessage">Mitteilung senden</s:String>
+    <s:String x:Key="KeyOrderMessageLabel">Mitteilung</s:String>
+    <s:String x:Key="KeySpecialOrderRequirement">Spezialanforderungen Auftrag</s:String>
+    <s:String x:Key="KeyNone">Nach Gruppe sortieren</s:String>
+    <s:String x:Key="KeyGroupBy">Gruppe nach</s:String>
+    <s:String x:Key="KeyFilterOptions">Weitere Filteroptionen</s:String>
+    <s:String x:Key="KeyShowAllPositions">Show all</s:String>
+    <s:String x:Key="KeyHideAllPositions">Hide all</s:String>
+    <s:String x:Key="KeyClearAllFilter">Alle Filter löschen</s:String>
+    <s:String x:Key="KeyFromDateErrorMessage">Das Von-Datum darf nicht nach dem Bis-Datum liegen</s:String>
+    <s:String x:Key="KeyToDateErrorMessage">Das Bis-Datum darf nicht vor dem Von-Datum liegen</s:String>
+
+    <!--  OrderDetailsView  -->
+    <s:String x:Key="KeyCustomerFilter">Kunden Filter</s:String>
+    <s:String x:Key="KeyCustomerComboBox">Kunden</s:String>
+    <s:String x:Key="KeyNoData">Keine Daten</s:String>
+    <s:String x:Key="KeyNoOrdersFound">Keine Aufträge gefunden. Die Netzwerkverbindung zur Datenbank überprüfen.</s:String>
+    <s:String x:Key="KeyFiles">Dateien</s:String>
+    <s:String x:Key="KeyDeviceOrigin">Geräteherkunft</s:String>
+    <s:String x:Key="KeySapSerialNumber">SAP Seriennummer</s:String>
+    <s:String x:Key="KeySpecialOrderInstructions">Auftragspezialanweisungen</s:String>
+    <s:String x:Key="KeySpecialPositionRequirement">Spezialanforderungen</s:String>
+
+    <!--  Left Dropdown Labels On OrderDetailsView  -->
+    <s:String x:Key="KeyOrderType">Auftragsart</s:String>
+    <s:String x:Key="KeySapOrderType">SAP Auftragsart</s:String>
+    <s:String x:Key="KeyOrderTypeDetail">Auftragsart Detail</s:String>
+    <s:String x:Key="KeyEur1Le">EUR1/LE</s:String>
+    <s:String x:Key="KeyDeliveryPlant">Lieferwerk</s:String>
+
+    <!--  Right OrderSelectionView  -->
+    <s:String x:Key="KeyPositionHead">Positionkopf</s:String>
+    <s:String x:Key="KeyOpa">OPA</s:String>
+    <s:String x:Key="KeyGameDisplay">Spielanzeige</s:String>
+    <s:String x:Key="KeyCabinetModelYear">Jahr</s:String>
+    <s:String x:Key="KeyGameType">Spieltyp</s:String>
+    <s:String x:Key="KeyDesign">Gestaltung</s:String>
+    <s:String x:Key="KeyCabinetForm">Bauform</s:String>
+    <s:String x:Key="KeyCabinetType">Gerätetyp</s:String>
+    <s:String x:Key="KeyColor">Gehäuse Farbe</s:String>
+    <s:String x:Key="KeyLightBox">Lichtkasten/Aufsatz</s:String>
+    <s:String x:Key="KeyTopper">Topper</s:String>
+    <s:String x:Key="KeyTopLight">Lichtturm</s:String>
+    <s:String x:Key="KeyBoardMechanik">Boardmechanik</s:String>
+    <s:String x:Key="KeyUsbConfig">USB Config: KPanel</s:String>
+    <s:String x:Key="KeyButtonLayout">Tastenlayout</s:String>
+    <s:String x:Key="KeyPlayerTracking">Player Tracking</s:String>
+    <s:String x:Key="KeyNbs">NBS</s:String>
+    <s:String x:Key="KeyPlayerTrackingArea">Player Tracking Bereich</s:String>
+    <s:String x:Key="KeyBase">Base</s:String>
+    <s:String x:Key="KeyMachineModel">Model</s:String>
+    <s:String x:Key="KeyDisplayComment">Kommentar</s:String>
+    <s:String x:Key="KeySchematicWarning">ACHTUNG! Die zweidimensionale, schematische Darstellung kann von der dreidimensionalen Wirklichkeit abweichen!</s:String>
+    <s:String x:Key="KeySoftwarePreCheck">Software Precheck</s:String>
+    <s:String x:Key="KeyRequiredPlaceholder">Dieses Feld ist ein Pflichtfeld...</s:String>
+
+    <!--  Panel Title  -->
+    <s:String x:Key="KeyOrderList">Auftragsliste</s:String>
+    <s:String x:Key="KeyOrderDetail">Auftragsdetails</s:String>
+    <s:String x:Key="KeyNewComponent">Neue Komponente</s:String>
+
+    <!--  Right LogsView  -->
+    <s:String x:Key="KeyTimeStamp">Zeitstempel</s:String>
+    <s:String x:Key="KeyUsername">Benutzer</s:String>
+    <s:String x:Key="KeyPositionNumber">PosNum</s:String>
+    <s:String x:Key="KeySubPositionNumber">SubPosNum</s:String>
+    <s:String x:Key="KeyVersionNumber">VerNum</s:String>
+    <s:String x:Key="KeyCategory">Kategorie</s:String>
+    <s:String x:Key="KeyOldEntry">Alter Eintrag</s:String>
+    <s:String x:Key="KeyNewEntry">Neuer Eintrag</s:String>
+    <s:String x:Key="KeyEditingProgram">Bearbeitungsprogramm</s:String>
+
+    <!--  OrderModificationMessageView  -->
+    <s:String x:Key="KeyOrderMessageForSapLabel">Mitteilung:</s:String>
+    <s:String x:Key="KeyOrderModificationMessage">SAP-Benachrichtigung über Auftragsänderung</s:String>
+    <s:String x:Key="KeyOrderModificationReasonLabel">Auftragsänderungsgrund:</s:String>
+
+    <!--  SoftwarePrecheckComponent  -->
+    <s:String x:Key="KeyApproveSoftware">Geänderte Komponenten genehmigen und speichern</s:String>
+    <s:String x:Key="KeyDeclineSoftware">Auftrag ablehnen und geänderte Komponenten speichern</s:String>
+
+    <!--  Buttons ToolTips  -->
+    <s:String x:Key="KeyCancel">Abbrechen</s:String>
+    <s:String x:Key="KeyDelete">Entferne</s:String>
+    <s:String x:Key="KeyReset">Zurücksetzen</s:String>
+    <s:String x:Key="KeyLogs">Logs</s:String>
+    <s:String x:Key="KeySendToSap">Hardware an SAP Senden</s:String>
+    <s:String x:Key="KeyRefresh">Aktualisieren</s:String>
+    <s:String x:Key="KeyReload">Neuladen</s:String>
+    <s:String x:Key="KeySave">Speichern</s:String>
+    <s:String x:Key="KeyClose">Schließen</s:String>
+    <s:String x:Key="KeyMinimize">Minimieren</s:String>
+    <s:String x:Key="KeyMaximize">Maximieren</s:String>
+    <s:String x:Key="KeyTheme">Themes</s:String>
+    <s:String x:Key="KeyMachine">Maschine</s:String>
+    <s:String x:Key="KeyCash">Währung</s:String>
+    <s:String x:Key="KeySoftware">Software</s:String>
+    <s:String x:Key="KeyDoorsAndLocks">Türen Und Schlösser</s:String>
+    <s:String x:Key="KeySoftwareDevice">Software Device</s:String>
+    <s:String x:Key="KeyLicensePlate">Typenschilder</s:String>
+
+    <!--  DatePicker ToolTips  -->
+    <s:String x:Key="KeyFromDate">Das ausgewählte Datum beginnt um 00:00:00 Uhr</s:String>
+    <s:String x:Key="KeyToDate">Der nächste Tag nach dem ausgewählten Datum und die aktuelle Uhrzeit werden für den Filter verwendet. Bspl: Wenn 23.07.2025 00:00:00 ausgewählt ist, wird daraus 24.07.2025 13:05:56</s:String>
+
+    <!--  Current Version Info  -->
+    <s:String x:Key="KeyVersionInfoUpdate">Versionsinfo-Update</s:String>
+    <s:String x:Key="KeyVersionInfoLeft">Eine neue Version</s:String>
+    <s:String x:Key="KeyVersionInfoRight">ist verfügbar. Bitte, FAME und SWIM neu starten, um die aktualisierte Version zu erhalten.</s:String>
+
+</ResourceDictionary>

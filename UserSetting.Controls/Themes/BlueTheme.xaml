@@ -1,0 +1,108 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="WhiteSmoke" />
+    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#0069a4" />
+
+    <!--  Header  -->
+    <Color x:Key="HeadBackgroundBrush1">#94CBF0</Color>
+    <Color x:Key="HeadBackgroundBrush2">#94C8F0</Color>
+
+    <!--  Primary Button  -->
+    <SolidColorBrush x:Key="PrimaryButtonMouseOver" Color="#2E85C4" />
+
+    <!--  Primary Button Version Info  -->
+    <SolidColorBrush x:Key="PrimaryButtonVersionInfo" Color="#008CCB" />
+
+    <!--  Buttons  -->
+    <SolidColorBrush x:Key="DefaultBackgroundColor" Color="#007AAE" />
+    <SolidColorBrush x:Key="RedColor" Color="Red" />
+    <SolidColorBrush x:Key="YellowColor" Color="Yellow" />
+    <SolidColorBrush x:Key="MouseOverForegroundColor" Color="White" />
+    <SolidColorBrush x:Key="HeaderForegroundColor" Color="#007AAE" />
+
+    <!--  Minimize Button  -->
+    <SolidColorBrush x:Key="MinimizeButtonForegroundColor" Color="Sienna" />
+    <SolidColorBrush x:Key="MinimizeButtonMouseOverBackgroundColor" Color="#0396D5" />
+
+    <!--  Maximize Button  -->
+    <SolidColorBrush x:Key="MaximizeButtonForegroundColor" Color="#C8E0FA" />
+    <SolidColorBrush x:Key="MaximizeButtonMouseOverBackgroundColor" Color="#0396D5" />
+
+    <!--  Footer  -->
+    <Color x:Key="FootBackgroundBrush1">#ADD8E6</Color>
+    <Color x:Key="FootBackgroundBrush2">#BEEAFD</Color>
+    <SolidColorBrush x:Key="FooterForegroundColor" Color="#007AAE" />
+
+    <!--  Custom Window Background  -->
+    <SolidColorBrush x:Key="DefaultForeground" Color="#0069a4" />
+    <SolidColorBrush x:Key="CustomWindowBackground" Color="White" />
+
+    <!--  ComboBox Foreground / Background  -->
+    <SolidColorBrush x:Key="ComboboxForeground" Color="#0069a4" />
+    <SolidColorBrush x:Key="ComboboxBackground" Color="WhiteSmoke" />
+
+    <!--  Text Foreground / Background  -->
+    <SolidColorBrush x:Key="TextForeground" Color="#0069a4" />
+    <SolidColorBrush x:Key="TextBackground" Color="Transparent" />
+
+    <!--  Custom Window BorderBrush  -->
+    <SolidColorBrush x:Key="CustomWindowBorderBrush" Color="#3CB1E2" />
+
+    <!--  BorderPrimary  -->
+    <SolidColorBrush x:Key="BorderPrimary" Color="#ADD8E6" />
+
+    <!--  GroupBoxPrimary  -->
+    <SolidColorBrush x:Key="GroupBoxPrimary" Color="#000088" />
+
+    <!--  LanguageForegroundColor  -->
+    <SolidColorBrush x:Key="LanguageForegroundColor" Color="#0069a4" />
+
+    <!--  ComboboxBorder  -->
+    <SolidColorBrush x:Key="ComboboxBorder" Color="#94DAF0" />
+
+    <!--  Message Borderline  -->
+    <SolidColorBrush x:Key="MessageBorderLine" Color="#E1E1E1" />
+
+    <!--  FilterWatermark  -->
+    <SolidColorBrush x:Key="FilterWatermarkForeground" Color="#ADD8E6" />
+
+    <!--  BusyIndicator  -->
+    <SolidColorBrush x:Key="IndicatorForeground" Color="#94cbf0" />
+    <SolidColorBrush x:Key="IndicatorBackground" Color="WhiteSmoke" />
+
+    <!--  Edit Popup Window  -->
+    <SolidColorBrush x:Key="ModalTitleForeground" Color="#1E6BA4" />
+    <SolidColorBrush x:Key="ModalTitleLowerBorderLine" Color="#E1E1E1" />
+
+    <!--  GroupBy Filter  -->
+    <SolidColorBrush x:Key="GroupByBackground" Color="#B8E4F5" />
+    <SolidColorBrush x:Key="GroupByForeground" Color="#3CB1E2" />
+
+    <!--  Theme Toggle Button  -->
+    <SolidColorBrush x:Key="ThemeToggleButtonBackgroundColor" Color="#BEDAFD" />
+    <SolidColorBrush x:Key="ThemeToggleButtonForegroundColor" Color="#0069a4" />
+    <SolidColorBrush x:Key="ThemeToggleButtonMouseOverBackgroundColor" Color="#C8EAFA" />
+
+    <!--  SubPosition Message  -->
+    <SolidColorBrush x:Key="SubPositionMessageForegroundColor" Color="#0853A0" />
+
+    <!--  SelectedItemHighlightColors  -->
+    <Color x:Key="SelectedItemHighlightBackgroundColor">#1E6BA4</Color>
+    <Color x:Key="SelectedHighlightTextForeground">#FFFFFF</Color>
+
+    <SolidColorBrush x:Key="SelectedItemBackgroundColor" Color="#1E6BA4" />
+    <SolidColorBrush x:Key="SelectedItemForegroundColor" Color="#FFFFFF" />
+
+    <!--  Sub-Position Button  -->
+    <SolidColorBrush x:Key="SelectedSubPositionButtonHighlightBackgroundColor" Color="#94CBF0" />
+    <SolidColorBrush x:Key="UnSelectedSubPositionButtonBackgroundColor" Color="#1E6BA4" />
+
+    <SolidColorBrush x:Key="GridViewColumnHeaderSortGlyphDarkBrush" Color="#3CB1E2" />
+    <SolidColorBrush x:Key="GridViewColumnHeaderSortGlyphLightBrush" Color="#67BDE2" />
+
+    <!--  SelectedItemHighlightBackgroundColor  -->
+    <SolidColorBrush x:Key="MainMenuItemForegroundColor" Color="#000000" />
+    <SolidColorBrush x:Key="MainMenuForegroundColor" Color="#000000" />
+    <SolidColorBrush x:Key="MainMenuBackgroundColor" Color="Transparent" />
+
+</ResourceDictionary>
