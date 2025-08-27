@@ -1,1 +1,1 @@
-WPF Application Window Settings _ Save and load the application window position, size and state. At the application startup, these user settings are loaded. Thus, the application's settings are persisted throughout the sessions
+WPF Application Window Settings - Save and load the application window position, size and state. At the application startup, these user settings are loaded. Thus, the application's settings are persisted throughout the sessions
